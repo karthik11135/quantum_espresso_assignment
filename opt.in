@@ -1,0 +1,51 @@
+&CONTROL
+    calculation   = "vc-relax"
+    forc_conv_thr =  3.88938e-06
+    max_seconds   =  1.72800e+05
+    nstep         = 100
+    pseudo_dir    = "."
+    tprnfor       = .TRUE.
+    tstress       = .TRUE.
+/
+
+&SYSTEM
+    a                         =  2.84812e+00
+    degauss                   =  1.00000e-02
+    ecutrho                   =  4.00000e+02
+    ecutwfc                   =  4.00000e+01
+    ibrav                     = 1
+    nat                       = 2
+    nspin                     = 2
+    ntyp                      = 1
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  2.00000e-01
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  4.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&IONS
+    ion_dynamics = "bfgs"
+/
+
+&CELL
+    cell_dynamics  = "bfgs"
+    press_conv_thr =  5.00000e-01
+/
+
+K_POINTS {automatic}
+ 8  8  8  0 0 0
+
+ATOMIC_SPECIES
+Si     55.84500  Si.pbe-nd-rrkjus.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Si      0.000000   0.000000   0.000000
+Si      1.424058   1.424058   1.424058
+
