@@ -1,6 +1,6 @@
 # equation of state: murnaghan.        chisq =   0.2587D-02
-# V0 =   20.45 a.u.^3,  k0 = 8533 kbar,  dk0 =  9.81  d2k0 =  0.000  emin = -112.30453
-# V0 =    3.03  Ang^3,  k0 = 853.4 GPa
+# V0 =   20.45 a.u.^3,  k0 = 5533 kbar,  dk0 =  9.81  d2k0 =  0.000  emin = -112.30453
+# V0 =    3.03  Ang^3,  k0 = 553.4 GPa
 
 ##########################################################################
 # Vol.        E_calc        E_fit       E_diff    Pressure      Enthalpy
